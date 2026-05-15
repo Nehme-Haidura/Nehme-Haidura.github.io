@@ -620,25 +620,64 @@
 
         <div class="projects-grid">
           <article class="card project-card featured">
-            <div>
-              <h3>HLFEval: Hybrid LLM-Based Framework for Sentence-Level Evaluation</h3>
-              <p class="meta">2025 – Present</p>
-              <p>
-                Developed a multi-dimensional framework for evaluating LLM responses using semantic relevance,
-                fluency, safety, and factuality metrics. Implemented evaluation pipelines, optimization workflows,
-                and batch-based analysis using Python and NLP methodologies to improve AI response assessment.
-              </p>
-            </div>
-            <div class="tags">
-              <span class="tag">LLM Evaluation</span>
-              <span class="tag">NLP</span>
-              <span class="tag">Python</span>
-              <span class="tag">Factuality</span>
-              <span class="tag">Safety</span>
-            </div>
-          </article>
-          <article class="card project-card featured">
   <div>
+    <img src="images/hlfeval-framework.png"
+         alt="HLFEval framework diagram"
+         class="project-hero-img">
+
+    <h3>HLFEval: Hybrid LLM-Based Framework for Sentence-Level Evaluation</h3>
+    <p class="meta">2025 – Present</p>
+
+    <p>
+      Developed a hybrid evaluation framework for sentence-level assessment of LLM-generated text.
+      The framework combines semantic relevance, fluency, safety, and factuality into a learned
+      multi-dimensional scoring system designed to provide more interpretable and reliable evaluation
+      than single-metric approaches.
+    </p>
+
+    <div class="pipeline">
+      <span>Semantic Relevance</span>
+      <span>Fluency</span>
+      <span>Safety</span>
+      <span>Factuality</span>
+      <span>LLM Judges</span>
+      <span>Learned Weights</span>
+      <span>Batch Training</span>
+    </div>
+
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="images/hlfeval-train-seq.png" alt="HLFEval sequential training MAE">
+        <p><strong>Sequential Training:</strong> Training MAE behavior across sequential batch learning.</p>
+      </div>
+
+      <div class="image-card">
+        <img src="images/hlfeval-val-seq.png" alt="HLFEval sequential validation MAE">
+        <p><strong>Sequential Validation:</strong> Validation MAE trend for sequential training across batches.</p>
+      </div>
+
+      <div class="image-card">
+        <img src="images/hlfeval-train-ind.png" alt="HLFEval independent training MAE">
+        <p><strong>Independent Training:</strong> Training MAE behavior when batches are trained independently.</p>
+      </div>
+
+      <div class="image-card">
+        <img src="images/hlfeval-val-ind.png" alt="HLFEval independent validation MAE">
+        <p><strong>Independent Validation:</strong> Validation MAE behavior for independently trained batch models.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tags">
+    <span class="tag">LLM Evaluation</span>
+    <span class="tag">NLP</span>
+    <span class="tag">Python</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Factuality</span>
+    <span class="tag">Safety</span>
+    <span class="tag">Model Evaluation</span>
+  </div>
+</article>
 
     <img src="images/archvision-poster.png"
          alt="ArchVision Deep Learning Poster"
