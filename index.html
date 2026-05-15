@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nehme Haidura | AI Evaluation & Computer Science Portfolio</title>
-  <meta name="description" content="Portfolio of Nehme Haidura, AI Evaluation Specialist and Computer Science researcher focused on LLM evaluation, NLP, QA testing, machine learning, and data analytics." />
+  <meta name="description" content="Portfolio of Nehme Haidura, AI Evaluation Specialist and Computer Science researcher focused on LLM evaluation, NLP, QA testing, machine learning, computer vision, and data analytics." />
 
   <style>
     :root {
@@ -300,6 +300,63 @@
       min-height: 290px;
     }
 
+    .project-hero-img {
+      width: 100%;
+      max-height: 430px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+      background: #020617;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .image-card {
+      background: rgba(7, 17, 31, 0.55);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      border-radius: 14px;
+      margin-bottom: 10px;
+      background: #020617;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .image-card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .pipeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .pipeline span {
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      color: #e0f2fe;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
     .project-card.featured {
       grid-column: span 2;
       background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(52, 211, 153, 0.1)), rgba(18, 36, 58, 0.85);
@@ -345,7 +402,8 @@
       .hero-grid,
       .timeline-item,
       .projects-grid,
-      .two-col {
+      .two-col,
+      .image-grid {
         grid-template-columns: 1fr;
       }
 
@@ -359,6 +417,10 @@
 
       .hero {
         padding-top: 48px;
+      }
+
+      .image-card img {
+        height: auto;
       }
     }
   </style>
@@ -383,11 +445,11 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">AI Evaluation • NLP • QA Testing • Data Analytics</div>
+          <div class="eyebrow">AI Evaluation • NLP • QA Testing • Computer Vision • Data Analytics</div>
           <h1>Nehme Haidura<br><span class="gradient-text">Computer Science Researcher</span></h1>
           <p>
             AI Evaluation Specialist and Computer Science graduate researcher focused on LLM evaluation,
-            natural language processing, machine learning, software quality assurance, and data-driven analysis.
+            natural language processing, machine learning, software quality assurance, computer vision, and data-driven analysis.
           </p>
           <div class="btn-row">
             <a class="btn primary" href="mailto:Nehmehaidura@gmail.com">Contact Me</a>
@@ -401,13 +463,13 @@
           <h3>Profile Snapshot</h3>
           <p>
             Currently completing an M.Sc. in Computer Science — Artificial Intelligence Stream at the University of Windsor,
-            with hands-on experience in AI evaluation, QA testing, technical support, and research-focused software projects.
+            with hands-on experience in AI evaluation, QA testing, technical support, computer vision, and research-focused software projects.
           </p>
           <div class="stat-grid">
             <div class="stat"><strong>AI</strong><span>LLM Evaluation</span></div>
             <div class="stat"><strong>6+</strong><span>Technical Projects</span></div>
             <div class="stat"><strong>QA</strong><span>Testing Experience</span></div>
-            <div class="stat"><strong>NLP</strong><span>Research Focus</span></div>
+            <div class="stat"><strong>CV</strong><span>3D Reconstruction</span></div>
           </div>
         </aside>
       </div>
@@ -420,16 +482,17 @@
           <h2>Building intelligent systems through research, testing, and analysis.</h2>
           <p>
             I am a Computer Science professional with experience across AI evaluation, software quality assurance,
-            technical support, data analytics, and graduate-level research. My work focuses on evaluating and improving
-            AI-generated responses through human feedback methodologies, factuality assessment, reasoning analysis,
-            and multi-dimensional evaluation frameworks.
+            technical support, data analytics, computer vision, and graduate-level research. My work focuses on evaluating
+            and improving AI-generated responses through human feedback methodologies, factuality assessment,
+            reasoning analysis, and multi-dimensional evaluation frameworks.
           </p>
         </div>
         <div class="card">
           <p>
             Through graduate research, technical projects, and industry experience, I have worked with AI evaluation workflows,
-            Python-based analysis, NLP-focused research methodologies, software testing processes, and cross-functional technical support.
-            I am especially interested in applied AI systems, LLM evaluation, data-driven decision-making, and building reliable software solutions.
+            Python-based analysis, NLP-focused research methodologies, software testing processes, image processing pipelines,
+            and cross-functional technical support. I am especially interested in applied AI systems, LLM evaluation,
+            computer vision, data-driven decision-making, and building reliable software solutions.
           </p>
         </div>
       </div>
@@ -460,6 +523,7 @@
           <span class="skill">Matplotlib</span>
           <span class="skill">Plotly</span>
           <span class="skill">OpenCV</span>
+          <span class="skill">Computer Vision</span>
           <span class="skill">Git & GitHub</span>
           <span class="skill">Jira</span>
           <span class="skill">Azure AI</span>
@@ -541,7 +605,7 @@
         <div class="section-heading">
           <span>Projects</span>
           <h2>Featured technical projects</h2>
-          <p>Project screenshots and visuals can be added later inside each project card.</p>
+          <p>Selected projects in AI evaluation, NLP, deep learning, computer vision, graph learning, and applied machine learning.</p>
         </div>
 
         <div class="projects-grid">
@@ -556,7 +620,11 @@
               </p>
             </div>
             <div class="tags">
-              <span class="tag">LLM Evaluation</span><span class="tag">NLP</span><span class="tag">Python</span><span class="tag">Factuality</span><span class="tag">Safety</span>
+              <span class="tag">LLM Evaluation</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Python</span>
+              <span class="tag">Factuality</span>
+              <span class="tag">Safety</span>
             </div>
           </article>
 
@@ -568,7 +636,12 @@
                 Implemented and evaluated deep learning and multimodal architectures for scene classification using a large-scale image dataset containing 25,000+ images. Compared CNNs, ResNet variants, CLIP, Swin Transformers, and LLaMA-Vision models through 270+ controlled experiments.
               </p>
             </div>
-            <div class="tags"><span class="tag">Deep Learning</span><span class="tag">Computer Vision</span><span class="tag">CLIP</span><span class="tag">Transfer Learning</span></div>
+            <div class="tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">CLIP</span>
+              <span class="tag">Transfer Learning</span>
+            </div>
           </article>
 
           <article class="card project-card">
@@ -579,19 +652,78 @@
                 Designed and implemented a Mixture of Experts system combining base and fine-tuned LLMs for adaptive text generation. Developed a gating mechanism to dynamically blend model outputs and improve response generation performance.
               </p>
             </div>
-            <div class="tags"><span class="tag">LLMs</span><span class="tag">MoE</span><span class="tag">Python</span><span class="tag">Text Generation</span></div>
+            <div class="tags">
+              <span class="tag">LLMs</span>
+              <span class="tag">MoE</span>
+              <span class="tag">Python</span>
+              <span class="tag">Text Generation</span>
+            </div>
           </article>
 
-          <article class="card project-card">
+          <article class="card project-card featured">
             <div>
+              <img src="images/point-cloud-3d.png" alt="3D point cloud reconstruction using OpenCV" class="project-hero-img" />
+
               <h3>Stereo Vision and 3D Scene Reconstruction using OpenCV</h3>
               <p class="meta">2024</p>
+
               <p>
-                Developed stereo vision and 3D reconstruction pipelines using OpenCV, feature matching, epipolar geometry,
-                disparity estimation, image rectification, SIFT detection, FLANN matching, StereoSGBM mapping, and 3D point cloud reconstruction.
+                Developed a complete stereo vision and 3D reconstruction pipeline using OpenCV, SIFT feature detection,
+                FLANN matching, epipolar geometry, disparity estimation, StereoSGBM mapping, image synthesis,
+                and dense 3D point cloud reconstruction.
               </p>
+
+              <div class="pipeline">
+                <span>Stereo Images</span>
+                <span>Feature Matching</span>
+                <span>Epipolar Geometry</span>
+                <span>Disparity Map</span>
+                <span>View Synthesis</span>
+                <span>3D Point Cloud</span>
+              </div>
+
+              <div class="image-grid">
+                <div class="image-card">
+                  <img src="images/stereo-left.png" alt="Left stereo statue image" />
+                  <p><strong>Left Stereo Image:</strong> Input view used for disparity estimation and reconstruction.</p>
+                </div>
+
+                <div class="image-card">
+                  <img src="images/stereo-right.png" alt="Right stereo statue image" />
+                  <p><strong>Right Stereo Image:</strong> Second stereo view used to compute depth correspondence.</p>
+                </div>
+
+                <div class="image-card">
+                  <img src="images/epipolar-matching.png" alt="Epipolar geometry and feature matching" />
+                  <p><strong>Epipolar Matching:</strong> Demonstrated feature correspondence using SIFT, FLANN, epipolar geometry, and ZNCC patch similarity.</p>
+                </div>
+
+                <div class="image-card">
+                  <img src="images/disparity-map.png" alt="Disparity map generated using StereoSGBM" />
+                  <p><strong>Disparity Estimation:</strong> Generated dense disparity maps using StereoSGBM to estimate relative scene depth.</p>
+                </div>
+
+                <div class="image-card">
+                  <img src="images/reconstructed-right.png" alt="Reconstructed right stereo view" />
+                  <p><strong>Right View Reconstruction:</strong> Synthesized the right stereo view from the left image using disparity-based pixel reprojection.</p>
+                </div>
+
+                <div class="image-card">
+                  <img src="images/point-cloud-3d.png" alt="3D point cloud reconstruction" />
+                  <p><strong>3D Point Cloud:</strong> Reprojected disparity into 3D space to generate a dense point cloud representation of the scene.</p>
+                </div>
+              </div>
             </div>
-            <div class="tags"><span class="tag">OpenCV</span><span class="tag">3D Reconstruction</span><span class="tag">Image Processing</span><span class="tag">Computer Vision</span></div>
+
+            <div class="tags">
+              <span class="tag">OpenCV</span>
+              <span class="tag">SIFT</span>
+              <span class="tag">FLANN</span>
+              <span class="tag">Epipolar Geometry</span>
+              <span class="tag">StereoSGBM</span>
+              <span class="tag">3D Reconstruction</span>
+              <span class="tag">Computer Vision</span>
+            </div>
           </article>
 
           <article class="card project-card">
@@ -602,7 +734,12 @@
                 Developed and evaluated topology-aware hypergraph construction methods for Hypergraph Neural Networks using the DOSAGE algorithm on the Cora citation dataset. Compared DOSAGE-based and kNN-based approaches for node classification.
               </p>
             </div>
-            <div class="tags"><span class="tag">Graph Neural Networks</span><span class="tag">HGNN</span><span class="tag">Deep Learning</span><span class="tag">Cora Dataset</span></div>
+            <div class="tags">
+              <span class="tag">Graph Neural Networks</span>
+              <span class="tag">HGNN</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Cora Dataset</span>
+            </div>
           </article>
 
           <article class="card project-card">
@@ -612,7 +749,12 @@
                 Developed machine learning models for breast cancer subtype classification using the METABRIC clinical dataset containing 2,500+ patient records. Implemented preprocessing, SMOTE balancing, feature selection, SVM, and Random Forest optimization.
               </p>
             </div>
-            <div class="tags"><span class="tag">AI for Healthcare</span><span class="tag">Random Forest</span><span class="tag">SVM</span><span class="tag">METABRIC</span></div>
+            <div class="tags">
+              <span class="tag">AI for Healthcare</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">SVM</span>
+              <span class="tag">METABRIC</span>
+            </div>
           </article>
         </div>
       </div>
@@ -687,7 +829,7 @@
             <span>Contact</span>
             <h2>Let’s connect</h2>
             <p style="margin-left:auto; margin-right:auto;">
-              I am open to opportunities in AI evaluation, QA testing, IT support, data analytics, software systems, and applied machine learning.
+              I am open to opportunities in AI evaluation, QA testing, IT support, data analytics, software systems, computer vision, and applied machine learning.
             </p>
           </div>
           <div class="btn-row" style="justify-content:center;">
