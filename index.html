@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nehme Haidura | AI Evaluation & Computer Science Portfolio</title>
-  <meta name="description" content="Portfolio of Nehme Haidura, AI Evaluation Specialist and Computer Science researcher focused on LLM evaluation, NLP, QA testing, machine learning, computer vision, and data analytics." />
+  <meta name="description" content="Portfolio of Nehme Haidura, AI Evaluation Specialist and Computer Science researcher focused on LLM evaluation, NLP, QA testing, machine learning, computer vision, graph learning, and data analytics." />
 
   <style>
     :root {
@@ -300,6 +300,11 @@
       min-height: 290px;
     }
 
+    .project-card.featured {
+      grid-column: span 2;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(52, 211, 153, 0.1)), rgba(18, 36, 58, 0.85);
+    }
+
     .project-hero-img {
       width: 100%;
       max-height: 430px;
@@ -309,16 +314,6 @@
       border: 1px solid rgba(255, 255, 255, 0.12);
       box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
       background: #020617;
-      .certificate-img {
-        width: 100%;
-        max-width: 700px;
-        display: block;
-        margin: 0 auto 22px auto;
-        border-radius: 18px;
-        border: 1px solid rgba(255,255,255,0.12);
-        box-shadow: 0 20px 45px rgba(0,0,0,0.35);
-        background: #020617;
-}
     }
 
     .image-grid {
@@ -365,11 +360,6 @@
       border-radius: 999px;
       font-size: 0.88rem;
       font-weight: 700;
-    }
-
-    .project-card.featured {
-      grid-column: span 2;
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(52, 211, 153, 0.1)), rgba(18, 36, 58, 0.85);
     }
 
     .tags {
@@ -455,11 +445,12 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">AI Evaluation • NLP • QA Testing • Computer Vision • Data Analytics</div>
+          <div class="eyebrow">AI Evaluation • NLP • QA Testing • Computer Vision • Graph Learning • Data Analytics</div>
           <h1>Nehme Haidura<br><span class="gradient-text">Computer Science Researcher</span></h1>
           <p>
             AI Evaluation Specialist and Computer Science graduate researcher focused on LLM evaluation,
-            natural language processing, machine learning, software quality assurance, computer vision, and data-driven analysis.
+            natural language processing, machine learning, software quality assurance, computer vision, graph learning,
+            and data-driven analysis.
           </p>
           <div class="btn-row">
             <a class="btn primary" href="mailto:Nehmehaidura@gmail.com">Contact Me</a>
@@ -473,11 +464,11 @@
           <h3>Profile Snapshot</h3>
           <p>
             Currently completing an M.Sc. in Computer Science — Artificial Intelligence Stream at the University of Windsor,
-            with hands-on experience in AI evaluation, QA testing, technical support, computer vision, and research-focused software projects.
+            with hands-on experience in AI evaluation, QA testing, technical support, computer vision, graph learning, and research-focused software projects.
           </p>
           <div class="stat-grid">
             <div class="stat"><strong>AI</strong><span>LLM Evaluation</span></div>
-            <div class="stat"><strong>6+</strong><span>Technical Projects</span></div>
+            <div class="stat"><strong>8+</strong><span>Technical Projects</span></div>
             <div class="stat"><strong>QA</strong><span>Testing Experience</span></div>
             <div class="stat"><strong>CV</strong><span>3D Reconstruction</span></div>
           </div>
@@ -492,7 +483,7 @@
           <h2>Building intelligent systems through research, testing, and analysis.</h2>
           <p>
             I am a Computer Science professional with experience across AI evaluation, software quality assurance,
-            technical support, data analytics, computer vision, and graduate-level research. My work focuses on evaluating
+            technical support, data analytics, computer vision, graph learning, and graduate-level research. My work focuses on evaluating
             and improving AI-generated responses through human feedback methodologies, factuality assessment,
             reasoning analysis, and multi-dimensional evaluation frameworks.
           </p>
@@ -501,8 +492,8 @@
           <p>
             Through graduate research, technical projects, and industry experience, I have worked with AI evaluation workflows,
             Python-based analysis, NLP-focused research methodologies, software testing processes, image processing pipelines,
-            and cross-functional technical support. I am especially interested in applied AI systems, LLM evaluation,
-            computer vision, data-driven decision-making, and building reliable software solutions.
+            representation learning experiments, and cross-functional technical support. I am especially interested in applied AI systems,
+            LLM evaluation, computer vision, graph neural networks, data-driven decision-making, and building reliable software solutions.
           </p>
         </div>
       </div>
@@ -519,6 +510,8 @@
           <span class="skill">LLM Evaluation</span>
           <span class="skill">Natural Language Processing</span>
           <span class="skill">Machine Learning</span>
+          <span class="skill">Deep Learning</span>
+          <span class="skill">Graph Neural Networks</span>
           <span class="skill">Python</span>
           <span class="skill">SQL</span>
           <span class="skill">Java</span>
@@ -534,6 +527,8 @@
           <span class="skill">Plotly</span>
           <span class="skill">OpenCV</span>
           <span class="skill">Computer Vision</span>
+          <span class="skill">Scikit-learn</span>
+          <span class="skill">PyTorch</span>
           <span class="skill">Git & GitHub</span>
           <span class="skill">Jira</span>
           <span class="skill">Azure AI</span>
@@ -615,117 +610,106 @@
         <div class="section-heading">
           <span>Projects</span>
           <h2>Featured technical projects</h2>
-          <p>Selected projects in AI evaluation, NLP, deep learning, computer vision, graph learning, and applied machine learning.</p>
+          <p>Selected projects in AI evaluation, NLP, deep learning, computer vision, graph learning, representation learning, and applied machine learning.</p>
         </div>
 
         <div class="projects-grid">
           <article class="card project-card featured">
-  <div>
-    <img src="images/hlfeval-framework.png"
-         alt="HLFEval framework diagram"
-         class="project-hero-img">
+            <div>
+              <img src="images/hlfeval-framework.png" alt="HLFEval framework diagram" class="project-hero-img" />
 
-    <h3>HLFEval: Hybrid LLM-Based Framework for Sentence-Level Evaluation</h3>
-    <p class="meta">2025 – Present</p>
+              <h3>HLFEval: Hybrid LLM-Based Framework for Sentence-Level Evaluation</h3>
+              <p class="meta">2025 – Present</p>
 
-    <p>
-      Developed a hybrid evaluation framework for sentence-level assessment of LLM-generated text.
-      The framework combines semantic relevance, fluency, safety, and factuality into a learned
-      multi-dimensional scoring system designed to provide more interpretable and reliable evaluation
-      than single-metric approaches.
-    </p>
+              <p>
+                Developed a hybrid evaluation framework for sentence-level assessment of LLM-generated text.
+                The framework combines semantic relevance, fluency, safety, and factuality into a learned
+                multi-dimensional scoring system designed to provide more interpretable and reliable evaluation
+                than single-metric approaches.
+              </p>
 
-    <div class="pipeline">
-      <span>Semantic Relevance</span>
-      <span>Fluency</span>
-      <span>Safety</span>
-      <span>Factuality</span>
-      <span>LLM Judges</span>
-      <span>Learned Weights</span>
-      <span>Batch Training</span>
-    </div>
+              <div class="pipeline">
+                <span>Semantic Relevance</span>
+                <span>Fluency</span>
+                <span>Safety</span>
+                <span>Factuality</span>
+                <span>LLM Judges</span>
+                <span>Learned Weights</span>
+                <span>Batch Training</span>
+              </div>
 
-    <div class="image-grid">
-      <div class="image-card">
-        <img src="images/hlfeval-train-seq.png" alt="HLFEval sequential training MAE">
-        <p><strong>Sequential Training:</strong> Training MAE behavior across sequential batch learning.</p>
-      </div>
+              <div class="image-grid">
+                <div class="image-card">
+                  <img src="images/hlfeval-train-seq.png" alt="HLFEval sequential training MAE" />
+                  <p><strong>Sequential Training:</strong> Training MAE behavior across sequential batch learning.</p>
+                </div>
 
-      <div class="image-card">
-        <img src="images/hlfeval-val-seq.png" alt="HLFEval sequential validation MAE">
-        <p><strong>Sequential Validation:</strong> Validation MAE trend for sequential training across batches.</p>
-      </div>
+                <div class="image-card">
+                  <img src="images/hlfeval-val-seq.png" alt="HLFEval sequential validation MAE" />
+                  <p><strong>Sequential Validation:</strong> Validation MAE trend for sequential training across batches.</p>
+                </div>
 
-      <div class="image-card">
-        <img src="images/hlfeval-train-ind.png" alt="HLFEval independent training MAE">
-        <p><strong>Independent Training:</strong> Training MAE behavior when batches are trained independently.</p>
-      </div>
+                <div class="image-card">
+                  <img src="images/hlfeval-train-ind.png" alt="HLFEval independent training MAE" />
+                  <p><strong>Independent Training:</strong> Training MAE behavior when batches are trained independently.</p>
+                </div>
 
-      <div class="image-card">
-        <img src="images/hlfeval-val-ind.png" alt="HLFEval independent validation MAE">
-        <p><strong>Independent Validation:</strong> Validation MAE behavior for independently trained batch models.</p>
-      </div>
-    </div>
-  </div>
+                <div class="image-card">
+                  <img src="images/hlfeval-val-ind.png" alt="HLFEval independent validation MAE" />
+                  <p><strong>Independent Validation:</strong> Validation MAE behavior for independently trained batch models.</p>
+                </div>
+              </div>
+            </div>
 
-  <div class="tags">
-    <span class="tag">LLM Evaluation</span>
-    <span class="tag">NLP</span>
-    <span class="tag">Python</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">Factuality</span>
-    <span class="tag">Safety</span>
-    <span class="tag">Model Evaluation</span>
-  </div>
-</article>
+            <div class="tags">
+              <span class="tag">LLM Evaluation</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Factuality</span>
+              <span class="tag">Safety</span>
+              <span class="tag">Model Evaluation</span>
+            </div>
+          </article>
 
-    <img src="images/archvision-poster.png"
-         alt="ArchVision Deep Learning Poster"
-         class="project-hero-img">
+          <article class="card project-card featured">
+            <div>
+              <img src="images/archvision-poster.png" alt="ArchVision deep learning poster" class="project-hero-img" />
 
-    <h3>ArchVision: From CNNs to Multimodal</h3>
+              <h3>ArchVision: From CNNs to Multimodal</h3>
+              <p class="meta">2025</p>
 
-    <p class="meta">2025</p>
+              <p>
+                Implemented and evaluated deep learning and multimodal architectures for large-scale scene classification using 25,000+ images across six scene categories. Compared CNNs, ResNet variants, CLIP, Swin Transformers, EfficientNet, ConvNeXt, and LLaMA-Vision models through 270+ controlled experiments involving preprocessing, augmentation, transfer learning, finetuning, and performance evaluation.
+              </p>
 
-    <p>
-      Implemented and evaluated deep learning and multimodal architectures for large-scale
-      scene classification using 25,000+ images across six scene categories.
-      Compared CNNs, ResNet variants, CLIP, Swin Transformers, EfficientNet,
-      ConvNeXt, and LLaMA-Vision models through 270+ controlled experiments involving
-      preprocessing, augmentation, transfer learning, finetuning, and performance evaluation.
-    </p>
+              <div class="pipeline">
+                <span>Deep Learning</span>
+                <span>Transfer Learning</span>
+                <span>CLIP</span>
+                <span>Swin Transformers</span>
+                <span>LLaMA-Vision</span>
+                <span>Computer Vision</span>
+                <span>Multimodal AI</span>
+                <span>270+ Experiments</span>
+              </div>
 
-    <div class="pipeline">
-      <span>Deep Learning</span>
-      <span>Transfer Learning</span>
-      <span>CLIP</span>
-      <span>Swin Transformers</span>
-      <span>LLaMA-Vision</span>
-      <span>Computer Vision</span>
-      <span>Multimodal AI</span>
-      <span>270+ Experiments</span>
-    </div>
+              <div class="btn-row" style="margin-top:22px;">
+                <a class="btn primary" href="images/archvision-poster.pdf" target="_blank">View Full Poster</a>
+              </div>
+            </div>
 
-    <div class="btn-row" style="margin-top:22px;">
-      <a class="btn primary"
-         href="images/archvision-poster.pdf"
-         target="_blank">
-         View Full Poster
-      </a>
-    </div>
+            <div class="tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Transfer Learning</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">CLIP</span>
+              <span class="tag">LLaMA-Vision</span>
+            </div>
+          </article>
 
-  </div>
-
-  <div class="tags">
-    <span class="tag">PyTorch</span>
-    <span class="tag">Deep Learning</span>
-    <span class="tag">Computer Vision</span>
-    <span class="tag">Transfer Learning</span>
-    <span class="tag">Transformers</span>
-    <span class="tag">CLIP</span>
-    <span class="tag">LLaMA-Vision</span>
-  </div>
-</article>
           <article class="card project-card">
             <div>
               <h3>Mixture of Experts LLM System for Adaptive Text Generation</h3>
@@ -808,19 +792,62 @@
             </div>
           </article>
 
-          <article class="card project-card">
+          <article class="card project-card featured">
             <div>
-              <h3>Topology-Aware Hypergraph Construction for HGNNs</h3>
-              <p class="meta">2024</p>
+              <img src="images/spectral-clustering-comparison.png" alt="Spectral clustering comparison across nonlinear datasets" class="project-hero-img" />
+
+              <h3>Representation Learning: Spectral Clustering and Manifold-Based Analysis</h3>
+              <p class="meta">2025</p>
+
               <p>
-                Developed and evaluated topology-aware hypergraph construction methods for Hypergraph Neural Networks using the DOSAGE algorithm on the Cora citation dataset. Compared DOSAGE-based and kNN-based approaches for node classification.
+                Evaluated representation learning and clustering methods on nonlinear synthetic datasets, including circles, moons, spirals, half-kernel, three-circles, and Gaussian distributions. Compared K-Means with Spectral Clustering to analyze how graph-based similarity methods capture nonlinear structure more effectively than centroid-based clustering.
               </p>
+
+              <div class="pipeline">
+                <span>Spectral Clustering</span>
+                <span>K-Means</span>
+                <span>Manifold Learning</span>
+                <span>Nonlinear Data</span>
+                <span>Python</span>
+                <span>Scikit-learn</span>
+              </div>
             </div>
+
             <div class="tags">
-              <span class="tag">Graph Neural Networks</span>
+              <span class="tag">Representation Learning</span>
+              <span class="tag">Clustering</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Data Visualization</span>
+            </div>
+          </article>
+
+          <article class="card project-card featured">
+            <div>
+              <img src="images/dosage-hgnn-results.png" alt="DOSAGE hypergraph neural network performance results" class="project-hero-img" />
+
+              <h3>Topology-Aware Hypergraph Construction for Hypergraph Neural Networks</h3>
+              <p class="meta">2025</p>
+
+              <p>
+                Developed and evaluated topology-aware hypergraph construction methods for Hypergraph Neural Networks using the DOSAGE algorithm on the Cora citation dataset. Compared DOSAGE-based dense overlapping subgraph construction against kNN-based hypergraph construction, achieving up to 16.5% improvement in test accuracy.
+              </p>
+
+              <div class="pipeline">
+                <span>Hypergraph Neural Networks</span>
+                <span>DOSAGE</span>
+                <span>Graph Learning</span>
+                <span>Cora Dataset</span>
+                <span>Node Classification</span>
+                <span>PyTorch</span>
+              </div>
+            </div>
+
+            <div class="tags">
               <span class="tag">HGNN</span>
+              <span class="tag">Graph Neural Networks</span>
+              <span class="tag">DOSAGE</span>
               <span class="tag">Deep Learning</span>
-              <span class="tag">Cora Dataset</span>
+              <span class="tag">Node Classification</span>
             </div>
           </article>
 
@@ -848,85 +875,75 @@
           <span>Publications & Research</span>
           <h2>Research work</h2>
         </div>
+
         <div class="two-col">
           <article class="card publication-card">
+            <img src="images/dsllm-transformer-architecture.png" alt="Transformer architecture comparison" class="project-hero-img" />
 
-  <img src="images/dsllm-transformer-architecture.png"
-       alt="Transformer Architecture Comparison"
-       class="project-hero-img">
+            <h3>A Comparative Study on Domain-Specific LLMs: Architecture and Performance</h3>
 
-  <h3>A Comparative Study on Domain-Specific LLMs: Architecture and Performance</h3>
+            <p class="meta">
+              Springer LNNS · NLPIR 2025 · Advances in Natural Language Processing and Information Retrieval
+            </p>
 
-  <p class="meta">
-    Springer LNNS · NLPIR 2025 · Advances in Natural Language Processing and Information Retrieval
-  </p>
+            <p>
+              Conducted a large-scale comparative review of domain-specific large language models (DSLLMs), analyzing approximately 60 research studies across multiple architectures, domains, and evaluation benchmarks. The study investigated encoder-only, decoder-only, and encoder-decoder transformer architectures, identifying how architectural design impacts language understanding, generation, specialization, and domain adaptation performance.
+            </p>
 
-  <p>
-    Conducted a large-scale comparative review of domain-specific large language models (DSLLMs),
-    analyzing approximately 60 research studies across multiple architectures, domains, and evaluation benchmarks.
-    The study investigated encoder-only, decoder-only, and encoder-decoder transformer architectures,
-    identifying how architectural design fundamentally impacts language understanding, generation,
-    specialization, and domain adaptation performance.
-  </p>
+            <div class="pipeline">
+              <span>Large Language Models</span>
+              <span>Transformer Architectures</span>
+              <span>Domain-Specific AI</span>
+              <span>NLP Research</span>
+              <span>Literature Review</span>
+              <span>Springer Publication</span>
+            </div>
 
-  <div class="pipeline">
-    <span>Large Language Models</span>
-    <span>Transformer Architectures</span>
-    <span>Domain-Specific AI</span>
-    <span>NLP Research</span>
-    <span>Literature Review</span>
-    <span>Springer Publication</span>
-  </div>
+            <div class="btn-row" style="margin-top:22px;">
+              <a class="btn primary" href="images/dsllm-paper.pdf" target="_blank">View Published Paper</a>
+            </div>
+          </article>
 
-  <div class="btn-row" style="margin-top:22px;">
-    <a class="btn primary"
-       href="images/dsllm-paper.pdf"
-       target="_blank">
-       View Published Paper
-    </a>
-  </div>
+          <article class="card publication-card">
+            <h3>Hybrid Metric and LLM-Based Framework for Sentence-Level Evaluation of Generated Text</h3>
+            <p class="meta">University of Windsor · Jan 2026 – Present</p>
+            <p>
+              Developed a multi-metric evaluation framework using LLMs, Python, and large-scale datasets to assess text quality across semantic relevance, fluency, safety, and factuality dimensions.
+            </p>
+            <div class="pipeline">
+              <span>LLM Evaluation</span>
+              <span>Sentence-Level Scoring</span>
+              <span>Factuality</span>
+              <span>Safety</span>
+              <span>NLP Research</span>
+            </div>
+          </article>
 
-</article>
-
-
-     <div class="card" style="margin-top:24px;">
-
-  <h3>Conference Presentation Recognition</h3>
-
-  <p class="meta">
-    NLPIR 2025 — Advances in Natural Language Processing and Information Retrieval
-  </p>
-
-  <p>
-    Received conference presentation recognition for research contributions in natural language processing,
-    large language model evaluation, and AI-driven text assessment methodologies.
-  </p>
-
-  <p>
-    NLPIR 2025 is an international conference focused on natural language processing,
-    information retrieval, artificial intelligence, and computational linguistics research.
-    The accepted work was published through Springer’s Lecture Notes in Networks and Systems (LNNS) series.
-  </p>
-
-  <div class="pipeline">
-    <span>Natural Language Processing</span>
-    <span>LLM Evaluation</span>
-    <span>AI Research</span>
-    <span>Conference Presentation</span>
-    <span>Springer LNNS</span>
-  </div>
-
-  <div class="btn-row" style="margin-top:22px;">
-    <a class="btn primary"
-       href="images/nlpir-certificate.pdf"
-       target="_blank">
-       View Conference Certificate
-    </a>
-  </div>
-
-</div>
-
-      
+          <article class="card publication-card">
+            <h3>Conference Presentation Recognition</h3>
+            <p class="meta">NLPIR 2025 — Advances in Natural Language Processing and Information Retrieval</p>
+            <p>
+              Received conference presentation recognition for research contributions in natural language processing,
+              large language model evaluation, and AI-driven text assessment methodologies.
+            </p>
+            <p>
+              NLPIR 2025 is an international conference focused on natural language processing,
+              information retrieval, artificial intelligence, and computational linguistics research.
+              The accepted work was published through Springer’s Lecture Notes in Networks and Systems (LNNS) series.
+            </p>
+            <div class="pipeline">
+              <span>Natural Language Processing</span>
+              <span>LLM Evaluation</span>
+              <span>AI Research</span>
+              <span>Conference Presentation</span>
+              <span>Springer LNNS</span>
+            </div>
+            <div class="btn-row" style="margin-top:22px;">
+              <a class="btn primary" href="images/nlpir-certificate.pdf" target="_blank">View Conference Certificate</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section id="education">
@@ -971,7 +988,7 @@
             <span>Contact</span>
             <h2>Let’s connect</h2>
             <p style="margin-left:auto; margin-right:auto;">
-              I am open to opportunities in AI evaluation, QA testing, IT support, data analytics, software systems, computer vision, and applied machine learning.
+              I am open to opportunities in AI evaluation, QA testing, IT support, data analytics, software systems, computer vision, graph learning, and applied machine learning.
             </p>
           </div>
           <div class="btn-row" style="justify-content:center;">
