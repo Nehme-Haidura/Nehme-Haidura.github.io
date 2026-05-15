@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nehme Haidura | AI Evaluation & Computer Science Portfolio</title>
-  <meta name="description" content="Portfolio of Nehme Haidura, AI Evaluation Specialist and Computer Science researcher focused on LLM evaluation, NLP, QA testing, machine learning, computer vision, graph learning, and data analytics." />
+  <title>Nehme Haidura | AI & Machine Learning Portfolio</title>
+  <meta name="description" content="Portfolio of Nehme Haidura, AI and Machine Learning researcher focused on LLM evaluation, NLP, prompt engineering, QA testing, computer vision, graph learning, and data analytics." />
 
   <style>
     :root {
@@ -293,7 +293,8 @@
       gap: 20px;
     }
 
-    .project-card {
+    .project-card,
+    .publication-card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -323,6 +324,17 @@
       margin-top: 22px;
     }
 
+    .image-grid.compact {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .comparison-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
     .image-card {
       background: rgba(7, 17, 31, 0.55);
       border: 1px solid var(--border);
@@ -340,9 +352,31 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
+    .image-grid.compact .image-card img {
+      height: 180px;
+    }
+
     .image-card p {
       color: var(--muted);
       font-size: 0.92rem;
+    }
+
+    .project-details {
+      margin-top: 22px;
+      background: rgba(7, 17, 31, 0.42);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px 16px;
+    }
+
+    .project-details summary {
+      cursor: pointer;
+      color: #e0f2fe;
+      font-weight: 800;
+    }
+
+    .project-details[open] summary {
+      margin-bottom: 14px;
     }
 
     .pipeline {
@@ -352,7 +386,8 @@
       margin: 20px 0;
     }
 
-    .pipeline span {
+    .pipeline span,
+    .badge {
       background: rgba(56, 189, 248, 0.12);
       border: 1px solid rgba(56, 189, 248, 0.28);
       color: #e0f2fe;
@@ -360,6 +395,12 @@
       border-radius: 999px;
       font-size: 0.88rem;
       font-weight: 700;
+    }
+
+    .publication-card .badge {
+      display: inline-flex;
+      width: fit-content;
+      margin-bottom: 12px;
     }
 
     .tags {
@@ -382,6 +423,15 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+      align-items: stretch;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: stretch;
+      margin-top: 20px;
     }
 
     .contact-box {
@@ -403,7 +453,10 @@
       .timeline-item,
       .projects-grid,
       .two-col,
-      .image-grid {
+      .three-col,
+      .image-grid,
+      .image-grid.compact,
+      .comparison-row {
         grid-template-columns: 1fr;
       }
 
@@ -419,7 +472,8 @@
         padding-top: 48px;
       }
 
-      .image-card img {
+      .image-card img,
+      .image-grid.compact .image-card img {
         height: auto;
       }
     }
@@ -445,8 +499,8 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">AI Evaluation • NLP • QA Testing • Computer Vision • Graph Learning • Data Analytics</div>
-          <h1>Nehme Haidura<br><span class="gradient-text">Computer Science Researcher</span></h1>
+          <div class="eyebrow">LLM Evaluation • NLP • Prompt Engineering • Computer Vision • Graph Learning</div>
+          <h1>Nehme Haidura<br><span class="gradient-text">AI & Machine Learning Researcher</span></h1>
           <p>
             AI Evaluation Specialist and Computer Science graduate researcher focused on LLM evaluation,
             natural language processing, machine learning, software quality assurance, computer vision, graph learning,
@@ -463,14 +517,14 @@
         <aside class="hero-card">
           <h3>Profile Snapshot</h3>
           <p>
-            Currently completing an M.Sc. in Computer Science — Artificial Intelligence Stream at the University of Windsor,
+            Currently completing an M.Sc. in Computer Science, Artificial Intelligence Stream at the University of Windsor,
             with hands-on experience in AI evaluation, QA testing, technical support, computer vision, graph learning, and research-focused software projects.
           </p>
           <div class="stat-grid">
-            <div class="stat"><strong>AI</strong><span>LLM Evaluation</span></div>
+            <div class="stat"><strong>LLM</strong><span>Evaluation Research</span></div>
             <div class="stat"><strong>8+</strong><span>Technical Projects</span></div>
             <div class="stat"><strong>QA</strong><span>Testing Experience</span></div>
-            <div class="stat"><strong>CV</strong><span>3D Reconstruction</span></div>
+            <div class="stat"><strong>3D</strong><span>Computer Vision</span></div>
           </div>
         </aside>
       </div>
@@ -482,18 +536,17 @@
           <span>About</span>
           <h2>Building intelligent systems through research, testing, and analysis.</h2>
           <p>
-            I am a Computer Science professional with experience across AI evaluation, software quality assurance,
-            technical support, data analytics, computer vision, graph learning, and graduate-level research. My work focuses on evaluating
-            and improving AI-generated responses through human feedback methodologies, factuality assessment,
-            reasoning analysis, and multi-dimensional evaluation frameworks.
+            I am a Computer Science professional focused on applied AI, LLM evaluation, machine learning,
+            computer vision, graph learning, software quality assurance, and data analytics. My work combines research,
+            implementation, and evaluation to build reliable AI and software systems.
           </p>
         </div>
         <div class="card">
           <p>
-            Through graduate research, technical projects, and industry experience, I have worked with AI evaluation workflows,
-            Python-based analysis, NLP-focused research methodologies, software testing processes, image processing pipelines,
-            representation learning experiments, and cross-functional technical support. I am especially interested in applied AI systems,
-            LLM evaluation, computer vision, graph neural networks, data-driven decision-making, and building reliable software solutions.
+            Through graduate research, technical projects, and industry experience, I have worked with Python-based analysis,
+            NLP workflows, LLM-as-a-Judge evaluation, prompt engineering, model scoring, image processing pipelines,
+            representation learning experiments, and cross-functional technical support. I am especially interested in AI evaluation frameworks,
+            applied machine learning, computer vision, graph neural networks, and data-driven decision-making.
           </p>
         </div>
       </div>
@@ -507,12 +560,31 @@
         </div>
         <div class="card skills-grid">
           <span class="skill">Artificial Intelligence</span>
-          <span class="skill">LLM Evaluation</span>
-          <span class="skill">Natural Language Processing</span>
           <span class="skill">Machine Learning</span>
           <span class="skill">Deep Learning</span>
+          <span class="skill">Large Language Models</span>
+          <span class="skill">LLM Evaluation</span>
+          <span class="skill">LLM-as-a-Judge</span>
+          <span class="skill">Prompt Engineering</span>
+          <span class="skill">AI Evaluation Frameworks</span>
+          <span class="skill">Natural Language Processing</span>
+          <span class="skill">Model Evaluation</span>
+          <span class="skill">Factuality Assessment</span>
+          <span class="skill">Safety Evaluation</span>
+          <span class="skill">Computer Vision</span>
+          <span class="skill">OpenCV</span>
           <span class="skill">Graph Neural Networks</span>
+          <span class="skill">Representation Learning</span>
+          <span class="skill">Data Analysis</span>
+          <span class="skill">Data Visualization</span>
           <span class="skill">Python</span>
+          <span class="skill">PyTorch</span>
+          <span class="skill">TensorFlow</span>
+          <span class="skill">Scikit-learn</span>
+          <span class="skill">NumPy</span>
+          <span class="skill">Pandas</span>
+          <span class="skill">Matplotlib</span>
+          <span class="skill">Plotly</span>
           <span class="skill">SQL</span>
           <span class="skill">Java</span>
           <span class="skill">HTML</span>
@@ -520,15 +592,6 @@
           <span class="skill">JavaScript</span>
           <span class="skill">QA Testing</span>
           <span class="skill">Bug Reporting</span>
-          <span class="skill">Data Analytics</span>
-          <span class="skill">Data Visualization</span>
-          <span class="skill">NumPy</span>
-          <span class="skill">Matplotlib</span>
-          <span class="skill">Plotly</span>
-          <span class="skill">OpenCV</span>
-          <span class="skill">Computer Vision</span>
-          <span class="skill">Scikit-learn</span>
-          <span class="skill">PyTorch</span>
           <span class="skill">Git & GitHub</span>
           <span class="skill">Jira</span>
           <span class="skill">Azure AI</span>
@@ -547,21 +610,7 @@
         </div>
         <div class="timeline">
           <div class="timeline-item card">
-            <div class="timeline-date">Jan 2024 – Present</div>
-            <div class="timeline-content">
-              <h3>AI Evaluation Specialist</h3>
-              <p class="meta">Outlier · Remote · Contract Part-Time</p>
-              <ul>
-                <li>Evaluated AI-generated responses for factuality, reasoning quality, safety, and instruction adherence.</li>
-                <li>Performed human feedback assessment workflows to improve large language model performance.</li>
-                <li>Identified hallucinations, logical inconsistencies, and quality issues across AI-generated outputs.</li>
-                <li>Contributed to AI model refinement through evaluation, ranking, and response quality analysis.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item card">
-            <div class="timeline-date">May 2025 – Apr 2026</div>
+            <div class="timeline-date">May 2025 - Apr 2026</div>
             <div class="timeline-content">
               <h3>Graduate Assistant</h3>
               <p class="meta">University of Windsor · Windsor, Ontario · Hybrid</p>
@@ -575,15 +624,15 @@
           </div>
 
           <div class="timeline-item card">
-            <div class="timeline-date">Jan 2022 – Dec 2022</div>
+            <div class="timeline-date">Jan 2024 - Present</div>
             <div class="timeline-content">
-              <h3>Quality Assurance Analyst</h3>
-              <p class="meta">CARMA · Beirut, Lebanon · Full-Time</p>
+              <h3>AI Evaluation Specialist</h3>
+              <p class="meta">Outlier · Remote · Contract Part-Time</p>
               <ul>
-                <li>Performed software quality assurance testing to identify defects, inconsistencies, and performance issues.</li>
-                <li>Analyzed and documented testing results to support issue tracking and resolution processes.</li>
-                <li>Developed Excel-based reporting workflows to monitor software performance and testing outcomes.</li>
-                <li>Collaborated with cross-functional teams to validate fixes and improve testing procedures.</li>
+                <li>Evaluated AI-generated responses for factuality, reasoning quality, safety, and instruction adherence.</li>
+                <li>Performed human feedback assessment workflows to improve large language model performance.</li>
+                <li>Identified hallucinations, logical inconsistencies, and quality issues across AI-generated outputs.</li>
+                <li>Contributed to AI model refinement through evaluation, ranking, and response quality analysis.</li>
               </ul>
             </div>
           </div>
@@ -592,12 +641,26 @@
             <div class="timeline-date">2023</div>
             <div class="timeline-content">
               <h3>Technical Support Specialist</h3>
-              <p class="meta">Jiffy Tech Services · Fort McMurray, Alberta</p>
+              <p class="meta">Jiffy Tech Services · Fort McMurray, Alberta · Full-Time</p>
               <ul>
-                <li>Provided technical support by troubleshooting software and system-related issues.</li>
+                <li>Provided full-time technical support by troubleshooting software and system-related issues.</li>
                 <li>Diagnosed technical problems and escalated complex incidents when required.</li>
                 <li>Maintained clear documentation of issues, troubleshooting steps, and resolutions.</li>
                 <li>Assisted customers with technical inquiries and system support.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item card">
+            <div class="timeline-date">Jan 2022 - Dec 2022</div>
+            <div class="timeline-content">
+              <h3>Quality Assurance Analyst</h3>
+              <p class="meta">CARMA · Beirut, Lebanon · Full-Time</p>
+              <ul>
+                <li>Performed software quality assurance testing to identify defects, inconsistencies, and performance issues.</li>
+                <li>Analyzed and documented testing results to support issue tracking and resolution processes.</li>
+                <li>Developed Excel-based reporting workflows to monitor software performance and testing outcomes.</li>
+                <li>Collaborated with cross-functional teams to validate fixes and improve testing procedures.</li>
               </ul>
             </div>
           </div>
@@ -618,14 +681,13 @@
             <div>
               <img src="images/hlfeval-framework.png" alt="HLFEval framework diagram" class="project-hero-img" />
 
-              <h3>HLFEval: Hybrid LLM-Based Framework for Sentence-Level Evaluation</h3>
-              <p class="meta">2025 – Present</p>
+              <h3>HLFEval: A Hybrid LLM-Based Framework for Sentence-Level Evaluation of LLM Text Responses</h3>
+              <p class="meta">2025 - Present</p>
 
               <p>
                 Developed a hybrid evaluation framework for sentence-level assessment of LLM-generated text.
-                The framework combines semantic relevance, fluency, safety, and factuality into a learned
-                multi-dimensional scoring system designed to provide more interpretable and reliable evaluation
-                than single-metric approaches.
+                The framework combines semantic relevance, fluency, safety, and factuality into a learned multi-dimensional scoring system.
+                The project also uses LLM-as-a-Judge methodology and prompt engineering to support interpretable evaluation beyond single-metric approaches.
               </p>
 
               <div class="pipeline">
@@ -633,32 +695,36 @@
                 <span>Fluency</span>
                 <span>Safety</span>
                 <span>Factuality</span>
-                <span>LLM Judges</span>
+                <span>LLM-as-a-Judge</span>
+                <span>Prompt Engineering</span>
                 <span>Learned Weights</span>
                 <span>Batch Training</span>
               </div>
 
-              <div class="image-grid">
-                <div class="image-card">
-                  <img src="images/hlfeval-train-seq.png" alt="HLFEval sequential training MAE" />
-                  <p><strong>Sequential Training:</strong> Training MAE behavior across sequential batch learning.</p>
-                </div>
+              <details class="project-details">
+                <summary>View training and validation results</summary>
+                <div class="image-grid compact">
+                  <div class="image-card">
+                    <img src="images/hlfeval-train-seq.png" alt="HLFEval sequential training MAE" />
+                    <p><strong>Sequential Training:</strong> Training MAE across sequential batch learning.</p>
+                  </div>
 
-                <div class="image-card">
-                  <img src="images/hlfeval-val-seq.png" alt="HLFEval sequential validation MAE" />
-                  <p><strong>Sequential Validation:</strong> Validation MAE trend for sequential training across batches.</p>
-                </div>
+                  <div class="image-card">
+                    <img src="images/hlfeval-val-seq.png" alt="HLFEval sequential validation MAE" />
+                    <p><strong>Sequential Validation:</strong> Validation MAE trend across batches.</p>
+                  </div>
 
-                <div class="image-card">
-                  <img src="images/hlfeval-train-ind.png" alt="HLFEval independent training MAE" />
-                  <p><strong>Independent Training:</strong> Training MAE behavior when batches are trained independently.</p>
-                </div>
+                  <div class="image-card">
+                    <img src="images/hlfeval-train-ind.png" alt="HLFEval independent training MAE" />
+                    <p><strong>Independent Training:</strong> Training MAE when batches are trained independently.</p>
+                  </div>
 
-                <div class="image-card">
-                  <img src="images/hlfeval-val-ind.png" alt="HLFEval independent validation MAE" />
-                  <p><strong>Independent Validation:</strong> Validation MAE behavior for independently trained batch models.</p>
+                  <div class="image-card">
+                    <img src="images/hlfeval-val-ind.png" alt="HLFEval independent validation MAE" />
+                    <p><strong>Independent Validation:</strong> Validation MAE for independently trained batch models.</p>
+                  </div>
                 </div>
-              </div>
+              </details>
             </div>
 
             <div class="tags">
@@ -666,6 +732,7 @@
               <span class="tag">NLP</span>
               <span class="tag">Python</span>
               <span class="tag">Machine Learning</span>
+              <span class="tag">Prompt Engineering</span>
               <span class="tag">Factuality</span>
               <span class="tag">Safety</span>
               <span class="tag">Model Evaluation</span>
@@ -677,7 +744,7 @@
               <img src="images/archvision-poster.png" alt="ArchVision deep learning poster" class="project-hero-img" />
 
               <h3>ArchVision: From CNNs to Multimodal</h3>
-              <p class="meta">2025</p>
+              <p class="meta">2024</p>
 
               <p>
                 Implemented and evaluated deep learning and multimodal architectures for large-scale scene classification using 25,000+ images across six scene categories. Compared CNNs, ResNet variants, CLIP, Swin Transformers, EfficientNet, ConvNeXt, and LLaMA-Vision models through 270+ controlled experiments involving preprocessing, augmentation, transfer learning, finetuning, and performance evaluation.
@@ -713,14 +780,14 @@
           <article class="card project-card">
             <div>
               <h3>Mixture of Experts LLM System for Adaptive Text Generation</h3>
-              <p class="meta">2025</p>
+              <p class="meta">2024</p>
               <p>
-                Designed and implemented a Mixture of Experts system combining base and fine-tuned LLMs for adaptive text generation. Developed a gating mechanism to dynamically blend model outputs and improve response generation performance.
+                Designed and implemented a Mixture of Experts system combining base and fine-tuned LLMs for adaptive text generation. Developed a gating mechanism to dynamically blend model outputs and improve response generation performance. Future work and continued development planned.
               </p>
             </div>
             <div class="tags">
               <span class="tag">LLMs</span>
-              <span class="tag">MoE</span>
+              <span class="tag">Mixture of Experts</span>
               <span class="tag">Python</span>
               <span class="tag">Text Generation</span>
             </div>
@@ -748,37 +815,42 @@
                 <span>3D Point Cloud</span>
               </div>
 
-              <div class="image-grid">
-                <div class="image-card">
-                  <img src="images/stereo-left.png" alt="Left stereo statue image" />
-                  <p><strong>Left Stereo Image:</strong> Input view used for disparity estimation and reconstruction.</p>
+              <details class="project-details">
+                <summary>View stereo vision pipeline gallery</summary>
+                <div class="comparison-row">
+                  <div class="image-card">
+                    <img src="images/stereo-left.png" alt="Left stereo statue image" />
+                    <p><strong>Left Stereo Image:</strong> Input view used for disparity estimation and reconstruction.</p>
+                  </div>
+
+                  <div class="image-card">
+                    <img src="images/stereo-right.png" alt="Right stereo statue image" />
+                    <p><strong>Right Stereo Image:</strong> Second stereo view used to compute depth correspondence.</p>
+                  </div>
                 </div>
 
-                <div class="image-card">
-                  <img src="images/stereo-right.png" alt="Right stereo statue image" />
-                  <p><strong>Right Stereo Image:</strong> Second stereo view used to compute depth correspondence.</p>
-                </div>
+                <div class="image-grid">
+                  <div class="image-card">
+                    <img src="images/epipolar-matching.png" alt="Epipolar geometry and feature matching" />
+                    <p><strong>Epipolar Matching:</strong> Demonstrated feature correspondence using SIFT, FLANN, epipolar geometry, and ZNCC patch similarity.</p>
+                  </div>
 
-                <div class="image-card">
-                  <img src="images/epipolar-matching.png" alt="Epipolar geometry and feature matching" />
-                  <p><strong>Epipolar Matching:</strong> Demonstrated feature correspondence using SIFT, FLANN, epipolar geometry, and ZNCC patch similarity.</p>
-                </div>
+                  <div class="image-card">
+                    <img src="images/disparity-map.png" alt="Disparity map generated using StereoSGBM" />
+                    <p><strong>Disparity Estimation:</strong> Generated dense disparity maps using StereoSGBM to estimate relative scene depth.</p>
+                  </div>
 
-                <div class="image-card">
-                  <img src="images/disparity-map.png" alt="Disparity map generated using StereoSGBM" />
-                  <p><strong>Disparity Estimation:</strong> Generated dense disparity maps using StereoSGBM to estimate relative scene depth.</p>
-                </div>
+                  <div class="image-card">
+                    <img src="images/reconstructed-right.png" alt="Reconstructed right stereo view" />
+                    <p><strong>Right View Reconstruction:</strong> Synthesized the right stereo view from the left image using disparity-based pixel reprojection.</p>
+                  </div>
 
-                <div class="image-card">
-                  <img src="images/reconstructed-right.png" alt="Reconstructed right stereo view" />
-                  <p><strong>Right View Reconstruction:</strong> Synthesized the right stereo view from the left image using disparity-based pixel reprojection.</p>
+                  <div class="image-card">
+                    <img src="images/point-cloud-3d.png" alt="3D point cloud reconstruction" />
+                    <p><strong>3D Point Cloud:</strong> Reprojected disparity into 3D space to generate a dense point cloud representation of the scene.</p>
+                  </div>
                 </div>
-
-                <div class="image-card">
-                  <img src="images/point-cloud-3d.png" alt="3D point cloud reconstruction" />
-                  <p><strong>3D Point Cloud:</strong> Reprojected disparity into 3D space to generate a dense point cloud representation of the scene.</p>
-                </div>
-              </div>
+              </details>
             </div>
 
             <div class="tags">
@@ -852,70 +924,50 @@
           </article>
 
           <article class="card project-card featured">
-  <div>
+            <div>
+              <img src="images/breast-cancer-pipeline.png" alt="Breast Cancer ML Pipeline" class="project-hero-img" />
 
-    <img src="images/breast-cancer-pipeline.png"
-         alt="Breast Cancer ML Pipeline"
-         class="project-hero-img" />
+              <h3>Breast Cancer Subtype Classification using Machine Learning</h3>
+              <p class="meta">2025</p>
 
-    <h3>Breast Cancer Subtype Classification using Machine Learning</h3>
+              <p>
+                Developed a machine learning framework for breast cancer subtype classification using the METABRIC clinical dataset. The project combined preprocessing, SMOTE balancing, feature selection, and model optimization using Support Vector Machines and Random Forest classifiers.
+              </p>
 
-    <p class="meta">2025 • University of Windsor</p>
+              <p>
+                The optimized Random Forest model achieved <strong>99.37% accuracy</strong> and <strong>99.40% F1-score</strong> on the prepared experimental dataset, significantly outperforming SVM-based approaches.
+              </p>
 
-    <p>
-      Developed a machine learning framework for breast cancer subtype classification
-      using the METABRIC clinical dataset. The project combined preprocessing,
-      SMOTE balancing, feature selection, and model optimization using Support
-      Vector Machines and Random Forest classifiers.
-    </p>
+              <div class="image-grid">
+                <div class="image-card">
+                  <img src="images/breast-cancer-mutual-information.png" alt="Mutual Information Feature Importance" />
+                  <p><strong>Feature Importance Analysis:</strong> Mutual information scoring identified highly predictive clinical biomarkers including Oncotree Code and Tumour Histologic Subtype.</p>
+                </div>
+              </div>
 
-    <p>
-      The optimized Random Forest model achieved
-      <strong>99.37% accuracy</strong> and
-      <strong>99.40% F1-score</strong>,
-      significantly outperforming SVM-based approaches.
-    </p>
+              <div class="pipeline">
+                <span>METABRIC</span>
+                <span>SMOTE</span>
+                <span>Feature Selection</span>
+                <span>Random Forest</span>
+                <span>SVM</span>
+                <span>Clinical AI</span>
+              </div>
+            </div>
 
-    <div class="image-grid">
-
-      <div class="image-card">
-        <img src="images/breast-cancer-mutual-information.png"
-             alt="Mutual Information Feature Importance" />
-
-        <p>
-          <strong>Feature Importance Analysis:</strong>
-          Mutual information scoring identified highly predictive
-          clinical biomarkers including Oncotree Code and
-          Tumour Histologic Subtype.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="pipeline">
-      <span>METABRIC</span>
-      <span>SMOTE</span>
-      <span>Feature Selection</span>
-      <span>Random Forest</span>
-      <span>SVM</span>
-      <span>Clinical AI</span>
-    </div>
-
-  </div>
-
-  <div class="tags">
-    <span class="tag">Machine Learning</span>
-    <span class="tag">Healthcare AI</span>
-    <span class="tag">Random Forest</span>
-    <span class="tag">SVM</span>
-    <span class="tag">Feature Engineering</span>
-    <span class="tag">METABRIC</span>
-  </div>
-</article>
+            <div class="tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Healthcare AI</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">SVM</span>
+              <span class="tag">Feature Engineering</span>
+              <span class="tag">METABRIC</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    
+
     <section id="publications">
       <div class="container">
         <div class="section-heading">
@@ -925,16 +977,21 @@
 
         <div class="two-col">
           <article class="card publication-card">
+            <span class="badge">Accepted / In Press, Springer LNNS</span>
             <img src="images/dsllm-transformer-architecture.png" alt="Transformer architecture comparison" class="project-hero-img" />
 
             <h3>A Comparative Study on Domain-Specific LLMs: Architecture and Performance</h3>
 
             <p class="meta">
-              Springer LNNS · NLPIR 2025 · Advances in Natural Language Processing and Information Retrieval
+              Conducted at the University of Windsor · NLPIR 2025 · Advances in Natural Language Processing and Information Retrieval
             </p>
 
             <p>
               Conducted a large-scale comparative review of domain-specific large language models (DSLLMs), analyzing approximately 60 research studies across multiple architectures, domains, and evaluation benchmarks. The study investigated encoder-only, decoder-only, and encoder-decoder transformer architectures, identifying how architectural design impacts language understanding, generation, specialization, and domain adaptation performance.
+            </p>
+
+            <p>
+              Published in Springer Lecture Notes in Networks and Systems (LNNS). Author-submitted version prior to publisher formatting and edits.
             </p>
 
             <div class="pipeline">
@@ -943,40 +1000,42 @@
               <span>Domain-Specific AI</span>
               <span>NLP Research</span>
               <span>Literature Review</span>
-              <span>Springer Publication</span>
             </div>
 
             <div class="btn-row" style="margin-top:22px;">
-              <a class="btn primary" href="images/dsllm-paper.pdf" target="_blank">View Published Paper</a>
+              <a class="btn primary" href="images/dsllm-paper.pdf" target="_blank">View Submitted Manuscript</a>
+              <a class="btn secondary" href="#" target="_blank">DOI Coming Soon</a>
+              <a class="btn secondary" href="#" target="_blank">Official Link Coming Soon</a>
             </div>
           </article>
 
           <article class="card publication-card">
-            <h3>Hybrid Metric and LLM-Based Framework for Sentence-Level Evaluation of Generated Text</h3>
-            <p class="meta">University of Windsor · Jan 2026 – Present</p>
+            <span class="badge">Ongoing Research</span>
+            <img src="images/hlfeval-framework.png" alt="HLFEval research framework" class="project-hero-img" />
+
+            <h3>HLFEval: A Hybrid LLM-Based Framework for Sentence-Level Evaluation of LLM Text Responses</h3>
+            <p class="meta">Conducted at the University of Windsor · 2025 - Present</p>
             <p>
-              Developed a multi-metric evaluation framework using LLMs, Python, and large-scale datasets to assess text quality across semantic relevance, fluency, safety, and factuality dimensions.
+              Ongoing research developing a multi-metric evaluation framework using LLMs, Python, and large-scale datasets to assess generated text quality across semantic relevance, fluency, safety, and factuality dimensions. The project incorporates LLM-as-a-Judge methodology, prompt engineering, and learned metric weighting for sentence-level response evaluation.
             </p>
             <div class="pipeline">
               <span>LLM Evaluation</span>
               <span>Sentence-Level Scoring</span>
+              <span>LLM-as-a-Judge</span>
+              <span>Prompt Engineering</span>
               <span>Factuality</span>
               <span>Safety</span>
-              <span>NLP Research</span>
             </div>
           </article>
+        </div>
 
+        <div class="three-col">
           <article class="card publication-card">
+            <span class="badge">Conference Recognition</span>
             <h3>Conference Presentation Recognition</h3>
-            <p class="meta">NLPIR 2025 — Advances in Natural Language Processing and Information Retrieval</p>
+            <p class="meta">NLPIR 2025 · Japan</p>
             <p>
-              Received conference presentation recognition for research contributions in natural language processing,
-              large language model evaluation, and AI-driven text assessment methodologies.
-            </p>
-            <p>
-              NLPIR 2025 is an international conference focused on natural language processing,
-              information retrieval, artificial intelligence, and computational linguistics research.
-              The accepted work was published through Springer’s Lecture Notes in Networks and Systems (LNNS) series.
+              Received a presentation certificate for research accepted to NLPIR 2025 in Japan and published in Springer’s Lecture Notes in Networks and Systems series.
             </p>
             <div class="pipeline">
               <span>Natural Language Processing</span>
@@ -1001,27 +1060,27 @@
         </div>
         <div class="two-col">
           <div class="card">
-            <h3>Master of Science in Computer Science — Artificial Intelligence Stream</h3>
-            <p class="meta">University of Windsor · May 2025 – Aug 2026</p>
+            <h3>Master of Science in Computer Science, Artificial Intelligence Stream</h3>
+            <p class="meta">University of Windsor · May 2025 - Aug 2026</p>
             <p>Graduate studies focused on artificial intelligence, machine learning, NLP, data-driven systems, and LLM evaluation methodologies.</p>
           </div>
           <div class="card">
             <h3>Bachelor’s Degree in Computer Science</h3>
-            <p class="meta">Lebanese International University · 2017 – 2020</p>
+            <p class="meta">Lebanese International University · 2017 - 2020</p>
             <p>Completed coursework in software development, programming, databases, operating systems, and web technologies.</p>
           </div>
           <div class="card">
             <h3>Junior Data Analyst Program</h3>
-            <p class="meta">NPower Canada · May 2024 – Aug 2024</p>
+            <p class="meta">NPower Canada · May 2024 - Aug 2024</p>
             <p>Hands-on training in data analytics, business intelligence, SQL querying, Python analysis, dashboards, IBM Cognos, Excel, and visualization tools.</p>
           </div>
           <div class="card">
             <h3>Certifications</h3>
             <ul>
-              <li>IBM Data Analyst — IBM, 2024</li>
-              <li>Microsoft Certified: Azure AI Fundamentals — 2024</li>
-              <li>IT Essentials — Cisco, 2021</li>
-              <li>CCNA Routing and Switching — Cisco, 2020</li>
+              <li>IBM Data Analyst, IBM, 2024</li>
+              <li>Microsoft Certified: Azure AI Fundamentals, 2024</li>
+              <li>IT Essentials, Cisco, 2021</li>
+              <li>CCNA Routing and Switching, Cisco, 2020</li>
             </ul>
           </div>
         </div>
@@ -1050,7 +1109,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 Nehme Haidura. Built with HTML, CSS, and GitHub Pages.</p>
+      <p>© 2026 Nehme Haidura</p>
     </div>
   </footer>
 </body>
