@@ -317,6 +317,10 @@
       background: #020617;
     }
 
+    .large-hero-img {
+      max-height: 430px;
+    }
+
     .image-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -627,7 +631,7 @@
             <div class="timeline-date">Jan 2024 - Present</div>
             <div class="timeline-content">
               <h3>AI Evaluation Specialist</h3>
-              <p class="meta">Outlier · Remote · Contract Part-Time</p>
+              <p class="meta">Outlier · Remote, Oakland, CA, USA · Contract Part-Time</p>
               <ul>
                 <li>Evaluated AI-generated responses for factuality, reasoning quality, safety, and instruction adherence.</li>
                 <li>Performed human feedback assessment workflows to improve large language model performance.</li>
@@ -638,7 +642,7 @@
           </div>
 
           <div class="timeline-item card">
-            <div class="timeline-date">2023</div>
+            <div class="timeline-date">Jan 2023 - Dec 2023</div>
             <div class="timeline-content">
               <h3>Technical Support Specialist</h3>
               <p class="meta">Jiffy Tech Services · Fort McMurray, Alberta · Full-Time</p>
@@ -679,7 +683,7 @@
         <div class="projects-grid">
           <article class="card project-card featured">
             <div>
-              <img src="images/hlfeval-framework.png" alt="HLFEval framework diagram" class="project-hero-img" />
+              <img src="images/hlfeval-framework-ver.png" alt="HLFEval framework diagram" class="project-hero-img" />
 
               <h3>HLFEval: A Hybrid LLM-Based Framework for Sentence-Level Evaluation of LLM Text Responses</h3>
               <p class="meta">2025 - Present</p>
@@ -777,25 +781,9 @@
             </div>
           </article>
 
-          <article class="card project-card">
-            <div>
-              <h3>Mixture of Experts LLM System for Adaptive Text Generation</h3>
-              <p class="meta">2024</p>
-              <p>
-                Designed and implemented a Mixture of Experts system combining base and fine-tuned LLMs for adaptive text generation. Developed a gating mechanism to dynamically blend model outputs and improve response generation performance. Future work and continued development planned.
-              </p>
-            </div>
-            <div class="tags">
-              <span class="tag">LLMs</span>
-              <span class="tag">Mixture of Experts</span>
-              <span class="tag">Python</span>
-              <span class="tag">Text Generation</span>
-            </div>
-          </article>
-
           <article class="card project-card featured">
             <div>
-              <img src="images/point-cloud-3d.png" alt="3D point cloud reconstruction using OpenCV" class="project-hero-img" />
+              <img src="images/point-cloud-3d.png" alt="3D point cloud reconstruction using OpenCV" class="project-hero-img large-hero-img" />
 
               <h3>Stereo Vision and 3D Scene Reconstruction using OpenCV</h3>
               <p class="meta">2024</p>
@@ -963,12 +951,22 @@
               <span class="tag">Feature Engineering</span>
               <span class="tag">METABRIC</span>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section id="publications">
+          <article class="card project-card">
+            <div>
+              <h3>Mixture of Experts LLM System for Adaptive Text Generation</h3>
+              <p class="meta">2024</p>
+              <p>
+                Designed and implemented a Mixture of Experts system combining base and fine-tuned LLMs for adaptive text generation. Developed a gating mechanism to dynamically blend model outputs and improve response generation performance. Future work and continued development are planned to expand testing, evaluation, and research depth.
+              </p>
+            </div>
+            <div class="tags">
+              <span class="tag">Large Language Models</span>
+              <span class="tag">Mixture of Experts</span>
+              <span class="tag">Adaptive Generation</span>
+              <span class="tag">Python</span>
+            </div>
+          </article>$1
       <div class="container">
         <div class="section-heading">
           <span>Publications & Research</span>
@@ -983,15 +981,15 @@
             <h3>A Comparative Study on Domain-Specific LLMs: Architecture and Performance</h3>
 
             <p class="meta">
-              Conducted at the University of Windsor · NLPIR 2025 · Advances in Natural Language Processing and Information Retrieval
+              Conducted at the University of Windsor · Accepted at NLPIR 2025 · Accepted / In Press, Springer LNNS
             </p>
 
             <p>
-              Conducted a large-scale comparative review of domain-specific large language models (DSLLMs), analyzing approximately 60 research studies across multiple architectures, domains, and evaluation benchmarks. The study investigated encoder-only, decoder-only, and encoder-decoder transformer architectures, identifying how architectural design impacts language understanding, generation, specialization, and domain adaptation performance.
+              Conducted a large-scale comparative review of domain-specific large language models (DSLLMs), analyzing approximately 60 research studies across multiple architectures, domains, and evaluation benchmarks. The work was conducted at the University of Windsor, accepted for presentation at NLPIR 2025, and accepted / in press for publication in Springer Lecture Notes in Networks and Systems (LNNS), related to Advances in Natural Language Processing and Information Retrieval.
             </p>
 
             <p>
-              Published in Springer Lecture Notes in Networks and Systems (LNNS). Author-submitted version prior to publisher formatting and edits.
+              The linked article is the author-submitted manuscript version, provided prior to publisher formatting and editorial edits. It is not the final Springer-formatted version.
             </p>
 
             <div class="pipeline">
@@ -1014,7 +1012,7 @@
             <img src="images/hlfeval-framework.png" alt="HLFEval research framework" class="project-hero-img" />
 
             <h3>HLFEval: A Hybrid LLM-Based Framework for Sentence-Level Evaluation of LLM Text Responses</h3>
-            <p class="meta">Conducted at the University of Windsor · 2025 - Present</p>
+            <p class="meta">Ongoing research at the University of Windsor · 2025 - Present</p>
             <p>
               Ongoing research developing a multi-metric evaluation framework using LLMs, Python, and large-scale datasets to assess generated text quality across semantic relevance, fluency, safety, and factuality dimensions. The project incorporates LLM-as-a-Judge methodology, prompt engineering, and learned metric weighting for sentence-level response evaluation.
             </p>
@@ -1033,9 +1031,9 @@
           <article class="card publication-card">
             <span class="badge">Conference Recognition</span>
             <h3>Conference Presentation Recognition</h3>
-            <p class="meta">NLPIR 2025 · Japan</p>
+            <p class="meta">December 14, 2025 · Kyushu University, Fukuoka, Japan</p>
             <p>
-              Received a presentation certificate for research accepted to NLPIR 2025 in Japan and published in Springer’s Lecture Notes in Networks and Systems series.
+              Presented research at NLPIR 2025, held at Kyushu University in Fukuoka, Japan. The conference presentation was connected to work accepted for Springer’s Lecture Notes in Networks and Systems series.
             </p>
             <div class="pipeline">
               <span>Natural Language Processing</span>
